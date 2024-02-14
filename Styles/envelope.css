@@ -1,0 +1,276 @@
+/** @format */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fae;
+}
+
+.container {
+  position: relative;
+}
+
+.valentines {
+  position: relative;
+  top: 50px;
+  cursor: pointer;
+  animation: up 3s linear infinite;
+}
+
+@keyframes up {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+}
+
+.envelop {
+  position: relative;
+  width: 499.66px;
+  height: 331.8px;
+  background-color: #e94486;
+}
+
+.envelop:before {
+  background-color: #e94486;
+  content: "";
+  position: absolute;
+  width: 355px;
+  height: 353px;
+  transform: rotate(45deg);
+  top: -175px;
+  left: 72.4px;
+  border-radius: 50px 0 0 0;
+}
+.card {
+  position: absolute;
+  background-color: #eae;
+  width: 450px;
+  height: 300px;
+  top: 8.3px;
+  left: 25px;
+  box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  border: 3px solid #003049;
+  border-style: dotted;
+  width: 400px;
+  height: 270px;
+  left: 22px;
+  top: 22px;
+}
+
+.text {
+  position: absolute;
+  font-family: "Brush Script MT", cursive;
+  font-size: 10px;
+  text-align: center;
+  line-height: 25px;
+  top: 25px;
+  left: 37px;
+  font-weight: bolder;
+  color: #003049;
+}
+
+p {
+  font-family: "Brush Script MT", cursive;
+  width: 370px;
+  height: 50px;
+}
+
+.heart {
+  background-color: #d62828;
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
+  position: relative;
+  top: 70px;
+  left: 10px;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: #d62828;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
+}
+
+.hearts {
+  position: absolute;
+  top: -200px;
+  left: 100px;
+}
+
+@keyframes heart {
+  0% {
+    transform: translateY(0) rotate(-45deg) scale(0.3);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-350px) rotate(-45deg) scale(1.5);
+    opacity: 0.3;
+  }
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven {
+  background-color: red;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin: 0 10px;
+  position: relative;
+  transform: rotate(-45deg);
+  top: 350px;
+}
+
+.one:before,
+.one:after,
+.two:before,
+.two:after,
+.three:before,
+.three:after,
+.four:before,
+.four:after,
+.five:before,
+.five:after,
+.six:before,
+.six:after,
+.seven:before,
+.seven:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+
+.one:before,
+.two:before,
+.three:before,
+.four:before,
+.five:before,
+.six:before,
+.seven:before {
+  top: -5px;
+  left: 0;
+}
+
+.one:after,
+.two:after,
+.three:after,
+.four::after,
+.five:after,
+.six:after,
+.seven:after {
+  top: 0;
+  left: 5px;
+}
+
+.one {
+  left: 10px;
+  animation: heart 1s ease-out infinite;
+}
+
+.two {
+  left: 30px;
+  animation: heart 2s ease-out infinite;
+}
+
+.three {
+  left: 50px;
+  animation: heart 3.1s ease-out infinite;
+}
+
+.four {
+  left: 70px;
+  animation: heart 2.6s ease-out infinite;
+}
+
+.five {
+  left: 90px;
+  animation: heart 1.5s ease-out infinite;
+}
+
+.six {
+  left: 110px;
+  animation: heart 1.8s ease-out infinite;
+}
+
+.seven {
+  left: 130px;
+  animation: heart 2.2s ease-out infinite;
+}
+
+.front {
+  position: absolute;
+  border-right: 280px solid #e94486; /* Increase the border-right length */
+  border-top: 180px solid transparent;
+  border-bottom: 150px solid transparent;
+  left: 220px; /* Adjust the left position */
+  top: 5px;
+  width: 0px;
+  height: 0;
+  z-index: 10;
+}
+
+.front:before {
+  content: "";
+  border-left: 500px solid #e9669a;
+  border-top: 340px solid transparent;
+  position: absolute;
+  left: -220px; /* Adjusted to position it at the left edge of the container */
+  top: -190px;
+  width: 0;
+  height: 0;
+}
+
+.shadow {
+  position: absolute;
+  width: 550px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.03);
+  top: 441.7px;
+  left: -25px;
+  z-index: -1;
+  animation: scale 2s linear infinite;
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0.85);
+  }
+}

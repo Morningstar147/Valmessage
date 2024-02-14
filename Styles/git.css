@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif sans-serif;
+}
+.gif {
+  height: 100%;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #e94d58;
+  margin: 15px 0;
+}
+
+.btn-group {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noBtn {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  padding: 10px 20px;
+  height: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #e94d58;
+  color: #e94d58;
+  background-color: #ffffff;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  box-shadow: 0 2px 4px gray;
+  margin: 30px;
+}
+.yesBtn {
+  background-color: #e94d58;
+  color: #ffffff;
+  width: 150px;
+  height: inherit;
+  padding: 10px 20px;
+  border: #ffffff 2px solid;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  box-shadow: 0 2px 4px gray;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+button:nth-child(1) {
+  margin-left: -200px;
+  background: #e94d58;
+}
+
+button:nth-child(2) {
+  margin-right: -200px;
+  background-color: white;
+  color: #e94d58;
+}
+
+button .yesBtn:hover {
+  background-color: #e94d58;
+  color: #ffffff;
+}
+
+.yesBtn a {
+  text-decoration: none;
+  color: #ffffff;
+}
